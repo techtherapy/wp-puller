@@ -536,7 +536,7 @@ $backup_class = $data['backup_class'];
                                         <?php endif; ?>
                                         <?php
                                         /* translators: %s: human-readable time difference */
-                                        printf( esc_html__( '%s ago', 'wp-puller' ), esc_html( human_time_diff( $log['timestamp'], time() ) ) );
+                                        printf( esc_html__( '%s ago', 'wp-puller' ), esc_html( human_time_diff( $log['timestamp'], current_time( 'timestamp' ) ) ) );
                                         ?>
                                         &middot; <?php echo esc_html( ucfirst( $log['source'] ) ); ?>
                                     </span>
